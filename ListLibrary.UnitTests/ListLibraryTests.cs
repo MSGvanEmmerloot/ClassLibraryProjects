@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using UtilityLibraries;
+using CollectionExtendLib;
 
 namespace CollectionExtendLib.UnitTests
 {
