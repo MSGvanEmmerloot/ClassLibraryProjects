@@ -6,7 +6,7 @@ This library extends the List<T> and T[] collections by adding simple functions 
   
 ## Usage
 
-To use this library, download the provided nupkg file and install it in your project.
+To use this library, download the provided nupkg file [here](https://github.com/MSGvanEmmerloot/lib/tree/master/CollectionExtendLib) and install it in your project.
 When using the namespace "CollectionExtendLib", you can now use the provided functions.
 
 ## Credits
