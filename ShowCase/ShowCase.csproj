@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ListLibrary\CollectionExtendLib.csproj" />
+    <ProjectReference Include="..\CollectionExtendLib\CollectionExtendLib.csproj" />
   </ItemGroup>
 
 </Project>

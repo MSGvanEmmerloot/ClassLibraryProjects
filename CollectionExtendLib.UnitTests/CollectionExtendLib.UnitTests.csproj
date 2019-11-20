@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ListLibrary\CollectionExtendLib.csproj" />
+    <ProjectReference Include="..\CollectionExtendLib\CollectionExtendLib.csproj" />
   </ItemGroup>
 
 </Project>
