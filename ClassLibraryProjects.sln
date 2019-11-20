@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShowCase", "ShowCase\ShowCase.csproj", "{71005C4D-8857-406A-AFEA-3641B62D079B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListLibrary", "ListLibrary\ListLibrary.csproj", "{36798C68-BDED-4842-B9A7-8DBDB1BDF8CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollectionExtendLib", "ListLibrary\CollectionExtendLib.csproj", "{36798C68-BDED-4842-B9A7-8DBDB1BDF8CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListLibrary.UnitTests", "ListLibrary.UnitTests\ListLibrary.UnitTests.csproj", "{7CFFF7F1-0012-4C98-8051-F99B04662430}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollectionExtendLib.UnitTests", "ListLibrary.UnitTests\CollectionExtendLib.UnitTests.csproj", "{7CFFF7F1-0012-4C98-8051-F99B04662430}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

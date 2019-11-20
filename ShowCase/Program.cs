@@ -24,9 +24,9 @@ namespace ShowCase
         }
         private static void TestGenericArrays()
         {
-            double[] array = new double[5] { 1, 2.5, 3, 4.5, 5 };
-            double[] array2 = new double[1];
-            double[] array3 = new double[6] { 1, 2.2, 2.2, 4, 4, 3.9 };
+            double[] array = new double[] { 1, 2.5, 3, 4.5, 5 };
+            double[] array2 = new double[0];
+            double[] array3 = new double[] { 1, 2.2, 2.2, 4, 4, 3.9 };
 
             PrintCycleGenericArray(array);
             PrintCycleGenericArray(array2);
