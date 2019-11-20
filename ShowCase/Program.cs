@@ -8,7 +8,8 @@ namespace ShowCase
     {
         static void Main(string[] args)
         {
-            TestGenericLists();
+            //TestGenericLists();
+            TestGenericArrays();
         }
 
         private static void TestGenericLists()
@@ -17,9 +18,19 @@ namespace ShowCase
             List<double> list2 = new List<double>();
             List<double> list3 = new List<double>() { 1, 2.2, 2.2, 4, 4, 3.9 };
 
-            PrintCycleGeneric(list);
-            PrintCycleGeneric(list2);
-            PrintCycleGeneric(list3);
+            PrintCycleGenericList(list);
+            PrintCycleGenericList(list2);
+            PrintCycleGenericList(list3);
+        }
+        private static void TestGenericArrays()
+        {
+            double[] array = new double[5] { 1, 2.5, 3, 4.5, 5 };
+            double[] array2 = new double[1];
+            double[] array3 = new double[6] { 1, 2.2, 2.2, 4, 4, 3.9 };
+
+            PrintCycleGenericArray(array);
+            PrintCycleGenericArray(array2);
+            PrintCycleGenericArray(array3);
         }
 
         private static void TestAllTypes()
@@ -55,7 +66,7 @@ namespace ShowCase
             Console.WriteLine(ListLibrary.IsNumber<T>());
         }
 
-        private static void PrintCycleGeneric<T>(List<T> list)
+        private static void PrintCycleGenericList<T>(List<T> list)
         {
             Console.WriteLine("List contains: " + list.Stringify());
             Console.WriteLine("Max: " + list.Max());
@@ -77,6 +88,29 @@ namespace ShowCase
                 list.Fill(3, list[0]);
                 Console.WriteLine("[After Fill(3," + list[0] + ")] List contains: " + list.Stringify());
             }            
+            Console.WriteLine("");
+        }
+
+        private static void PrintCycleGenericArray<T>(T[] array)
+        {
+            Console.WriteLine("array contains: " + array.Stringify());
+            Console.WriteLine("Max: " + array.Max());
+            Console.WriteLine("Min: " + array.Min());
+            Console.WriteLine("Average: " + array.Average());
+            if (array.Length > 0)
+            {
+                Console.WriteLine("CountNumber([value=]" + array[0] + "): " + array.CountValue(array[0]));
+            }
+            Console.WriteLine("Amount of duplicates: " + array.CountDuplicates());
+            Console.WriteLine("array without duplicates: " + array.CopyWithoutDuplicates().Stringify());
+            Console.WriteLine("[After CopyWithoutDuplicates()] array contains: " + array.Stringify());
+            if (array.Length > 0)
+            {
+                array.Insert(1, 2, array[0]);
+                Console.WriteLine("[After Insert([position=]1, [count=]2, [value=]" + array[0] + ")] array contains: " + array.Stringify());
+                array.Fill(array[0]);
+                Console.WriteLine("[After Fill([value=]" + array[0] + ")] array contains: " + array.Stringify());
+            }
             Console.WriteLine("");
         }
     }
